@@ -10,4 +10,17 @@
         width: 55vw;
     } 
 
+    .statsBar {
+        width: 100%;
+
+        .stats{
+            color: $stats-color;
+            font-size: 0.75rem;
+            @include mq(768px){
+                font-size: 1rem; /* bigger font-size on bigger screens */
+            }
+        }
+    }
+
+
 }
