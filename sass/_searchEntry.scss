@@ -29,6 +29,25 @@
         @include mq(1025px){
             width: 60vw;
         }
+
+        /* Style text input */
+        /*  target any <input> element with the type attribute set to "text" */
+        input[type="text"]{
+            flex-grow: 1; 
+            /* Element will grow to fill any available space in the flex container, 
+               sharing container proportionally with other flex items that also have 
+               flex-grow set. */
+               
+            font-size: 0.75rem;
+            text-align: left;
+            letter-spacing: 0.1rem;
+            border: 0;
+            outline: none;
+            min-width: 150px;
+            @include mq(768px){
+                font-size: 1.25rem ;
+            }
+        }
     }
 
 }
