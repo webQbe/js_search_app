@@ -25,8 +25,13 @@
 }
 
 .offscreen{
-    
+
     position: absolute;
     left: -10000px; /* Move screen-reader text away */
 }
 
+/* Hide clear text X button by default */
+.none{
+
+    display: none;
+}
