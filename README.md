@@ -6,3 +6,7 @@
 - Accessibiliy Features with Semantic elements.
 - Using `Fetch()` with `Async` / `Await` to request data from Wikipedia API to feed search results.
 - Using FontAwesome Icons and Roboto Font
+
+
+
+
