@@ -114,4 +114,19 @@
         }
     }
 
+    .searchBar:hover,
+    .searchBar:focus-within {
+        /* .searchBar:focus-within - If a user clicks or tabs
+          into an [input field] or [button] inside the .searchBar 
+          container, the :focus-within pseudo-class becomes active
+          for the .searchBar element. */
+
+        box-shadow: 0 2px 5px 2px $search-bar-border; /* Shadow breakdown:
+            0: Horizontal offset (no horizontal shift).
+            2px: Vertical offset (shadow is 2 pixels below the element).
+            5px: Blur radius (softness of the shadow).
+            2px: Spread radius (size of the shadow). 
+            $search-bar-border: shadow color*/
+    }
+
 }
