@@ -24,3 +24,9 @@
     }
 }
 
+.offscreen{
+    
+    position: absolute;
+    left: -10000px; /* Move screen-reader text away */
+}
+
