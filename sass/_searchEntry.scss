@@ -1,0 +1,17 @@
+.searchEntry{
+    @include flexColumn;  /* Including a mixin */ 
+    padding-top: 40px;
+
+    .logo{
+        letter-spacing: -5px;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        @include mq(768px){/* Including a media query mixin with min width */ 
+            /* Bigger font & letter spacing for tablet size */
+            font-size: 4rem;
+            letter-spacing: -10px;
+        }
+    }
+
+}
