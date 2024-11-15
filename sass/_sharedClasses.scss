@@ -13,3 +13,14 @@
 .green {
     color: $logo-green;
 }
+
+.exclaim{
+    display: inline-block;
+    font-size: 2.5rem;
+    transform: rotate(12deg); /* Rotate ! mark */
+    @include mq(768px){/* Including a media query mixin with min width */ 
+        /* Bigger font for tablet size */
+        font-size: 5rem;
+    }
+}
+

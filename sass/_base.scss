@@ -95,9 +95,9 @@ footer{
     p {
         color: $stats-color;
         font-size: 0.5rem;
-        @include mq(768px){ /* Including a mixin */ 
-            /* For tablet size */
-            font-size: 1rem;
+        @include mq(768px){ /* Including a media query mixin with min width */ 
+            /* Bigger font for tablet size */
+            font-size: 1rem; 
         }
 
         a {
