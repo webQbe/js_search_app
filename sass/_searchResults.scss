@@ -22,5 +22,18 @@
         }
     }
 
+    .searchResults{
+        width: 100%;
+
+        .resultItem{
+            @include flexColumn; /* Include flexColumn mixin */
+            width: 100%;
+            padding: 0.25rem 0; /* TB & LR */
+            @include mq(768px) {
+                padding: 0.5rem 0; /* Bigger top-bottom padding on bigger screens */
+            }
+
+        }
+    }
 
 }
