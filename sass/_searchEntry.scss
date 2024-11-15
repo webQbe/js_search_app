@@ -3,6 +3,7 @@
     padding-top: 40px;
 
     .logo{
+
         letter-spacing: -5px;
         font-size: 2rem;
         font-weight: 600;
@@ -11,6 +12,22 @@
             /* Bigger font & letter spacing for tablet size */
             font-size: 4rem;
             letter-spacing: -10px;
+        }
+    }
+
+    .searchBar{
+        /* Overall Form */
+        width: 90vw;
+        display: flex; /* The child elements are laid out horizontally (in a row). */
+        border: 2px solid $search-bar-border;
+        border-radius: 500px;
+        padding: 0.15rem 0.25rem 0.15rem 0.75rem; 
+        @include mq(768px){
+            width: 80vw; /* Smaller search bar as screen gets bigger */
+            padding: 1.25rem 1.5rem; /* TB & LR */
+        }
+        @include mq(1025px){
+            width: 60vw;
         }
     }
 
