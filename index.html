@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchMe</title>
+    <!-- LOAD FONTAWESOME -->
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+
+    <!-- IMPORT FONT ROBOTO REGULAR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        .roboto-regular {
+                            font-family: "Roboto", sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+    </style>
+</head>
+<body>
+    <main> 
+        <!-- SEMANTIC ELEMENT -->
+        <h1 class="offscreen">
+            <!-- FOR SCREEN READERS -->
+            Search Me A Wikipedia Powered Search Engine
+        </h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">
+                 <!-- FOR SCREEN READERS -->
+                Search Term Entry
+            </h2>
+            <div class="logo" aria-hidden="true">
+                SearchMe
+            </div>
+            <form id="searchBar" class="searchBar">
+                <label for="search" class="offscreen">
+                    <!-- FOR SCREEN READERS -->
+                     Enter a search term or phrase
+                </label>
+                <input type="text" id="search" autocomplete="off" /> 
+
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search terms"><i class="fas fa-times"></i><!-- CLEAR TEXT BUTTON --></div>
+
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button"><i class="fas fa-search"></i><!-- SUBMIT BUTTON --></button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive">
+                    <!-- SHOW RESULT COUNT 
+                         aria-live="assertive": screen-reader announces result count -->
+                </div>
+            </div>
+            <div id="searchResults" class="searchResults">
+                <!-- SHOW SEARCH RESULTS -->
+
+                <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Apollo program<!-- Example Title --></a>
+                    </div>
+                    <div class="resultContents">
+                        <!-- Example Content -->
+                         <div class="resultImage">
+                            <!-- For Image if any -->
+                             <img src="//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Apollo_program.svg/170px-Apollo_program.svg.png" alt="Apollo program">
+                         </div>
+                         <div class="resultText">
+                            <p class="resultDescription">The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by NASA.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span>Powered by <a href="https://wikipedia.org" target="_blank">Wikipedia</a> <span aria-hidden="true">&gt;&gt;</span></p>
+    
+      <!-- aria-hidden="true" Screen-reader not read << >> symbols -->
+
+    </footer>
+</body>
+</html>
