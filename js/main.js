@@ -69,6 +69,14 @@ const processTheSearch = async() => {
 
     // Get results array
     const resultArray = await retrieveSearchResults(searchTerm);
+    // Skip if resultArray is empty
+    if(resultArray.length){
+
+        // Build search results
+        buildSearchResults(resultArray);
+
+        // set stats line
+    } 
 
 }
 
