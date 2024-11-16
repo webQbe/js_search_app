@@ -1,7 +1,7 @@
 // Import Functions
-import { setSearchFocus, showClearTextButton } from "./searchBar";
-import { getSearchTerm, retrieveSearchResults } from "./dataFunctions";
-import { buildSearchResults, clearStatsLine, setStatsLine, clearSearchResults } from "./searchResults";
+import { setSearchFocus, showClearTextButton } from "./searchBar.js";
+import { getSearchTerm, retrieveSearchResults } from "./dataFunctions.js";
+import { buildSearchResults, clearStatsLine, setStatsLine, clearSearchResults } from "./searchResults.js";
 
 // Listen for changes in the document's readiness state
 document.addEventListener("readystatechange", event => {
@@ -33,7 +33,13 @@ const initApp = () => {
     // Focus search input
     setSearchFocus();
 
-    // 3 Event Listeners to clear input text
+    // Select search input
+    const search = document.getElementById("search");
+
+    // Add 3 Event Listeners to clear input text
+    search.addEventListener("input", showClearTextButton);
+
+
 
 
     // Select form
