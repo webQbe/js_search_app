@@ -64,6 +64,12 @@ const processTheSearch = async() => {
 
     // Get search term
     const searchTerm = getSearchTerm(); 
+
+    if (searchTerm === "") return; // Stop if search term is empty
+
+    // Get results array
+    const resultArray = await retrieveSearchResults(searchTerm);
+
 }
 
 
