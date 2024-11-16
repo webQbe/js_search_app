@@ -35,7 +35,17 @@ const initApp = () => {
 
 }
 
+const submitTheSearch = (event) => {
 
+    event.preventDefault(); /* Stop page reload */
+
+    // Clear previous results
+    // Process search
+    // Focus search input
+
+
+
+}
 
 
 
