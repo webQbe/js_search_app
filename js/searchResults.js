@@ -117,3 +117,22 @@ export const clearStatsLine = () => {
     document.getElementById("stats").textContent = "";
 
 };
+
+export const setStatsLine = (numberOfResults) => {
+
+    // Select stats div element
+    const statLine = document.getElementById('stats'); 
+
+
+    if(numberOfResults){
+        // resultArray.length > 0
+
+        statLine.textContent = `Displaying ${numberOfResults} results.`;
+
+    } else {
+
+        statLine.textContent = `Sorry! No results.`;
+
+    }
+
+};

@@ -1,7 +1,7 @@
 // Import Functions
 import { setSearchFocus } from "./searchBar";
 import { getSearchTerm } from "./dataFunctions";
-import { buildSearchResults, clearStatsLine } from "./searchResults";
+import { buildSearchResults, clearStatsLine, setStatsLine } from "./searchResults";
 
 // Listen for changes in the document's readiness state
 document.addEventListener("readystatechange", event => {
@@ -40,6 +40,7 @@ const initApp = () => {
 
 }
 
+// Procedural Workflow Function
 const submitTheSearch = (event) => {
 
     event.preventDefault(); /* Stop page reload */
@@ -53,9 +54,6 @@ const submitTheSearch = (event) => {
     setSearchFocus();
 
 }
-
-
-// Procedural
 
 
 const processTheSearch = async() => {
@@ -76,7 +74,8 @@ const processTheSearch = async() => {
         // Build search results
         buildSearchResults(resultArray);
 
-        // set stats line
+        // Set stats line 
+        setStatsLine(resultArray.length);
     } 
 
 }
