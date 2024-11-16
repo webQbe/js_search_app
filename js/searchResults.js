@@ -110,3 +110,10 @@ const createResultText = (result) => {
     return resultText;
      
 };
+
+export const clearStatsLine = () => {
+
+    // Clear stats Element Text
+    document.getElementById("stats").textContent = "";
+
+};

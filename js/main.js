@@ -1,7 +1,7 @@
 // Import Functions
 import { setSearchFocus } from "./searchBar";
 import { getSearchTerm } from "./dataFunctions";
- 
+import { buildSearchResults, clearStatsLine } from "./searchResults";
 
 // Listen for changes in the document's readiness state
 document.addEventListener("readystatechange", event => {
@@ -61,6 +61,7 @@ const submitTheSearch = (event) => {
 const processTheSearch = async() => {
 
     //  Call clear stats line()
+    clearStatsLine();
 
     // Get search term
     const searchTerm = getSearchTerm(); 
