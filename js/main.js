@@ -1,5 +1,6 @@
 // Import Functions
 import { setSearchFocus } from "./searchBar";
+import { getSearchTerm } from "./dataFunctions";
  
 
 // Listen for changes in the document's readiness state
