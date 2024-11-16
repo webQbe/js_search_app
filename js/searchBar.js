@@ -33,3 +33,20 @@ export const showClearTextButton = () => {
 
 
 };
+
+export const clearSearchText = (event) => {
+
+    event.preventDefault(); // Prevent page reload
+
+    // Clear search input
+    document.getElementById("search").value = "";
+
+    // Hide clear X button
+    const clear = document.getElementById("clear");
+    clear.classList.add("none");
+    clear.classList.remove("flex");
+
+    // Focus search input
+    setSearchFocus();
+
+};
