@@ -36,8 +36,8 @@ export const showClearTextButton = () => {
 
 export const clearSearchText = (event) => {
 
-    event.preventDefault(); // Prevent page reload
-
+    event.preventDefault(); 
+    
     // Clear search input
     document.getElementById("search").value = "";
 

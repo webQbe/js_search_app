@@ -1,5 +1,5 @@
 // Import Functions
-import { setSearchFocus, showClearTextButton, clearPushListener } from "./searchBar.js";
+import { setSearchFocus, showClearTextButton, clearPushListener, clearSearchText } from "./searchBar.js";
 import { getSearchTerm, retrieveSearchResults } from "./dataFunctions.js";
 import { buildSearchResults, clearStatsLine, setStatsLine, clearSearchResults } from "./searchResults.js";
 
@@ -33,11 +33,17 @@ const initApp = () => {
     // Focus search input
     setSearchFocus();
 
-    // Select search input
-    const search = document.getElementById("search");
+    /* Adding 3 Event Listeners to clear input text */
 
-    // Add 3 Event Listeners to clear input text
+    // Search input
+    const search = document.getElementById("search");
     search.addEventListener("input", showClearTextButton);
+
+    // Clear button click
+    const clear = document.getElementById("clear");
+    clear.addEventListener("click", clearSearchText)
+
+
 
 
 
