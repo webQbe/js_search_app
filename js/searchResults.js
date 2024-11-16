@@ -1,3 +1,28 @@
+export const clearSearchResults = () => {
+
+    // Select #searchResults container
+    const parentElement = document.getElementById("searchResults");
+
+    // Select last element
+    let lastChild = parentElement.lastElementChild;
+
+    while(lastChild){
+        
+        parentElement.removeChild(lastChild);
+
+        // Re-assign next lastChild when 
+        // previous lastChild is removed
+        lastChild = parentElement.lastElementChild;
+
+        /* This loop will continue until all #searchResults elements are deleted */
+
+    }
+
+
+
+};
+
+
 // Pass resultArray to Build Search Results
 export const buildSearchResults = (resultArray) => {
 

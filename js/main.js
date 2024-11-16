@@ -1,7 +1,7 @@
 // Import Functions
 import { setSearchFocus } from "./searchBar";
 import { getSearchTerm } from "./dataFunctions";
-import { buildSearchResults, clearStatsLine, setStatsLine } from "./searchResults";
+import { buildSearchResults, clearStatsLine, setStatsLine, clearSearchResults } from "./searchResults";
 
 // Listen for changes in the document's readiness state
 document.addEventListener("readystatechange", event => {
@@ -46,6 +46,7 @@ const submitTheSearch = (event) => {
     event.preventDefault(); /* Stop page reload */
 
     // Clear previous results
+    clearSearchResults();
 
     // Process search
     processTheSearch();
