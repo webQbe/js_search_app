@@ -44,11 +44,25 @@ const submitTheSearch = (event) => {
     event.preventDefault(); /* Stop page reload */
 
     // Clear previous results
+
     // Process search
+    processTheSearch();
+
+    // Focus search input
     setSearchFocus();
 
 }
 
 
+// Procedural
+
+
+const processTheSearch = async() => {
+
+    //  Call clear stats line()
+
+    // Get search term
+    const searchTerm = getSearchTerm(); 
+}
 
 
