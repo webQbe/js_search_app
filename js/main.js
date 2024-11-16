@@ -39,9 +39,13 @@ const initApp = () => {
     const search = document.getElementById("search");
     search.addEventListener("input", showClearTextButton);
 
-    // Clear button click
+    // Clear button 
     const clear = document.getElementById("clear");
-    clear.addEventListener("click", clearSearchText)
+
+    // On click
+    clear.addEventListener("click", clearSearchText);
+    // On focus & Space OR Enter keydown 
+    clear.addEventListener("keydown", clearPushListener);
 
 
 
