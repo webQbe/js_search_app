@@ -1,4 +1,3 @@
-
 // Listen for changes in the document's readiness state
 document.addEventListener("readystatechange", event => {
 
@@ -22,6 +21,21 @@ document.addEventListener("readystatechange", event => {
     /* The difference is that DOMContentLoaded fires earlier, as soon as the HTML is parsed,
        while readystatechange with complete waits for the entire page to load. */
 });
+
+
+const initApp = () => {
+
+    // Set text input focus
+
+    // Select form
+    const from = document.getElementById("searchBar");
+
+    // Listen for from submit
+    from.addEventListener("submit",  submitTheSearch);
+
+}
+
+
 
 
 
