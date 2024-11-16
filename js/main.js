@@ -1,3 +1,7 @@
+// Import Functions
+import { setSearchFocus } from "./searchBar";
+ 
+
 // Listen for changes in the document's readiness state
 document.addEventListener("readystatechange", event => {
 
@@ -41,9 +45,7 @@ const submitTheSearch = (event) => {
 
     // Clear previous results
     // Process search
-    // Focus search input
-
-
+    setSearchFocus();
 
 }
 
