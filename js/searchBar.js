@@ -50,3 +50,17 @@ export const clearSearchText = (event) => {
     setSearchFocus();
 
 };
+
+export const clearPushListener = (event) => {
+
+    // Check if Enter OR Space key is pressed
+    if(event.key === "Enter" || event.key === " "){
+
+        event.preventDefault(); // Prevent typing space or enter
+
+        // Call click() on clear X button
+        document.getElementById("clear").click();
+
+    }
+
+};

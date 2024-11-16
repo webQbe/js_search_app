@@ -1,5 +1,5 @@
 // Import Functions
-import { setSearchFocus, showClearTextButton } from "./searchBar.js";
+import { setSearchFocus, showClearTextButton, clearPushListener } from "./searchBar.js";
 import { getSearchTerm, retrieveSearchResults } from "./dataFunctions.js";
 import { buildSearchResults, clearStatsLine, setStatsLine, clearSearchResults } from "./searchResults.js";
 
