@@ -27,7 +27,7 @@ $font-stack: "Roboto", Arial, sans-serif;
        you define it once and reuse it.*/
 
     display: flex; /* Use flexbox layout model, enable its child elements to be laid out in a flexible and efficient way. */
-    align-items: center; /* Align all child elements along the vertical axis in the center of the container. */
+    align-items: left; /* Align all child elements along the vertical axis in the center of the container. */
 }
 
 

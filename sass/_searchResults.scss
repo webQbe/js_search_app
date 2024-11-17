@@ -25,6 +25,7 @@
     .searchResults{
         width: 100%;
 
+
         .resultItem{
             @include flexColumn; /* Include flexColumn mixin */
             width: 100%;
