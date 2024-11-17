@@ -95,9 +95,10 @@ const processTheSearch = async() => {
         // Build search results
         buildSearchResults(resultArray);
 
-        // Set stats line 
-        setStatsLine(resultArray.length);
     } 
+
+    // Set stats line (always called, regardless of results)
+    setStatsLine(resultArray.length);
 
 }
 

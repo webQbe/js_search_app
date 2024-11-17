@@ -148,7 +148,6 @@ export const setStatsLine = (numberOfResults) => {
     // Select stats div element
     const statLine = document.getElementById('stats'); 
 
-
     if(numberOfResults){
         // resultArray.length > 0
 
