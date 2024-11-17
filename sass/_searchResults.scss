@@ -5,9 +5,11 @@
     width: 90vw;
     @include mq(768px){
         width: 75vw; /* smaller width on bigger screens */
+        padding: 0.5rem 0.5rem 0.5rem 10rem;
     }
     @include mq(1025px){
-        width: 55vw;
+        width: 75vw;
+        padding: 0.5rem 0.5rem 0.5rem 17rem;
     } 
 
     .statsBar {

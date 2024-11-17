@@ -26,11 +26,11 @@
         border-radius: 500px;
         padding: 0.15rem 0.25rem 0.15rem 0.75rem; 
         @include mq(768px){
-            width: 80vw; /* Smaller search bar as screen gets bigger */
+            width: 60vw; /* Smaller search bar as screen gets bigger */
             padding: 1.25rem 1.5rem; /* TB & LR */
         }
         @include mq(1025px){
-            width: 60vw;
+            width: 50vw;
         }
 
         /* Style text input */
